@@ -1,0 +1,25 @@
+{{template "head"}} {{template "navbar"}}
+
+<h1>Bienvenido, {{ .Usuario }}</h1>
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Tarea</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{range .Tareas}}
+
+    <tr>
+      <td>{{ .Nombre }}</td>
+      <td>{{ if .Completado }} Completo {{else}} Incompleto {{end}}</td>
+    </tr>
+
+    {{end}}
+  </tbody>
+</table>
+
+{{template "footer"}}

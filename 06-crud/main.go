@@ -22,5 +22,7 @@ func init() {
 func main() {
 	router := routes.Router()
 
+	fmt.Println("Aplicacion corriendo en el puerto 3000")
+
 	http.ListenAndServe(":3000", router)
 }

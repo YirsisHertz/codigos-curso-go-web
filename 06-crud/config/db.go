@@ -16,7 +16,7 @@ func Conexion() *sql.DB {
 		log.Fatal("DB Error...")
 	}
 
-	fmt.Println("DB Connection...")
+	fmt.Println("Conectado a la base")
 
 	return db
 }

@@ -100,6 +100,7 @@ func ReadUsers() []Usuario {
 
 	if err != nil {
 		panic("Error al leer usuarios")
+		// return nil
 	}
 
 	conexion.Close()

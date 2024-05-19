@@ -1,4 +1,4 @@
-version: '3.9'
+name: crudgo
 services:
   goapp:
     build: .
@@ -15,6 +15,6 @@ services:
       MYSQL_ROOT_PASSWORD: miPasswordSecreta123
     volumes:
       - db-data:/var/lib/mysql
-    
+
 volumes:
   db-data:
